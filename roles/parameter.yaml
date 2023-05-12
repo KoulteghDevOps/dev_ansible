@@ -1,5 +1,6 @@
 - name: Print a aws_ssm_parameter_store
-  hosts: all
+  hosts: localhost
+  connection: local
   taske:
     - name: Print a Parameter
       ansible.builtin.debug:
