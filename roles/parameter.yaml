@@ -3,4 +3,4 @@
   taske:
     - name: Print a Parameter
       ansible.builtin.debug:
-      message: Parameter - "{{ lookup('aws_ssm', 'Hello_World', region='us-east-1' ) }}"
+      message: Parameter - "{{ lookup('aws_ssm', 'test,test', region='us-east-1' ) }}"
